@@ -98,14 +98,6 @@ a {
     width: 75px;
 }
 
-.link img {
-    transition: filter 0.3s ease;
-}
-
-.link:hover img {
-    filter: grayscale(100%);
-}
-
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
