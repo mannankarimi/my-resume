@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+body {
+    color: #ffffff;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(120deg,
+            #0f172a,
+            #4338ca,
+            #164e63,
+            #7e22ce,
+            #0f172a);
+
+    background-size: 300% 300%;
+    animation: gradientAnimation 30s ease infinite;
+}
+
+a {
+    text-decoration: none;
+    color: #44f7f1;
+}
+
+.bold-font {
+    font-weight: 900;
+}
+
+.red-font {
+    color: #f87171;
+}
+
+.green-font {
+    color: #4ade80;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    min-width: 290px;
+    gap: 10px;
+}
+
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.text-container {
+    flex: 3;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.skills-container {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.profile-image {
+    width: 250px;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.link {
+    width: 75px;
+}
+
+.link img {
+    transition: filter 0.3s ease;
+}
+
+.link:hover img {
+    filter: grayscale(100%);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-container,
+    .text-container,
+    .skills-container {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
+}
