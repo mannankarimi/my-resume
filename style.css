@@ -19,7 +19,7 @@ body {
             #0f172a);
 
     background-size: 300% 300%;
-    animation: gradientAnimation 30s ease infinite;
+    animation: gradientAnimation 20s ease infinite;
 }
 
 a {
